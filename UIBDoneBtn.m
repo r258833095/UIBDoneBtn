@@ -1,14 +1,14 @@
 //
-//  UIKeyView.m
+//  UIBDoneBtn.m
 //  eQuery
 //
 //  Created by 斌 on 13-8-16.
 //  Copyright (c) 2013年 斌. All rights reserved.
 //
 
-#import "UIkeyView.h"
+#import "UIBDoneBtn.h"
 
-@implementation UIKeyView
+@implementation UIBDoneBtn
 
 #define isPhone ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
 
@@ -65,7 +65,7 @@
 -(UIImage*)getImageWithImageName:(NSString*)imageNamed{
     
     NSString *path = [NSString stringWithFormat:
-                      @"UIKeyViewBundle.bundle/Contents/Resources/%@",imageNamed];
+                      @"UIBDoneBtnBundle.bundle/Contents/Resources/%@",imageNamed];
     
     NSString *FullPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:path];
     

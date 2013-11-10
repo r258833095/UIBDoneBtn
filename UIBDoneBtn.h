@@ -1,5 +1,5 @@
 //
-//  UIKeyView.h
+//  UIBDoneBtn.h
 //  eQuery
 //
 //  Created by 斌 on 13-8-16.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIKeyView : UIView
+@interface UIBDoneBtn : UIView
 
 @end
