@@ -54,6 +54,16 @@
         CGFloat screenHeight = [[UIScreen mainScreen] bounds].size.height;
         self.frame=CGRectMake(0, screenHeight-39-kbSize.height, 320, 50);
         self.hidden=NO;
+        
+        //2014.3.19 百度输入法
+        NSString *keyType  = [[UITextInputMode currentInputMode] primaryLanguage];
+        if ([keyType isEqualToString:@"zhbaiduinput"] && kbSize.height < 216){
+
+            self.hidden = YES;
+
+        }
+        
+        
     }else{
         self.hidden=YES;
     }
